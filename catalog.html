@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our catalog with a wide selection of products tailored to meet your needs. Find details, pricing, and more."
+    />
+
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <title>Catalog page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <div class="header__logo__nav__box">
+          <a href="./index.html">
+            <img src="./img/logo/logos.svg" alt="Logo Pixmart" />
+          </a>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__list__item">
+                <a
+                  href="./index.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >About</a
+                >
+              </li>
+
+              <li class="nav__list__item">
+                <a
+                  href="./catalog.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >Products</a
+                >
+              </li>
+
+              <li class="nav__list__item">
+                <a
+                  href="./blog.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav__list__item">
+                <a
+                  href="./contact.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <form class="header__actions">
+          <label for="search-input" class="label--hidden"></label>
+          <input
+            id="search-input"
+            class="base-input text-three-regular header__input"
+            type="search"
+            placeholder="Search for Digital Assets"
+            name="search"
+          />
+          <a href="./cart.html" class="base-btn is-blue btn--is-small">
+            <span class="span__cart-count" id="cart-count">0</span>
+            <svg
+              title="bag"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                stroke="#F8F7FF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="catalog__promo-box">
+        <h1 class="header-h-one">
+          Explore Top
+          <span>
+            <span class="text--is-blue">UI Kits</span>
+            Design Assets</span
+          >
+        </h1>
+      </div>
+
+      <div class="catalog__container --is-flex">
+        <form action="/submit" method="post">
+          <section>
+            <fieldset class="filter__section">
+              <legend class="header-h-four">Categories</legend>
+              <div class="filter__checkbox-box">
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="all_categories"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="all_categories"
+                    class="text-three-regular text--is-black"
+                    >All Categories</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="technology"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="technology"
+                    class="text-three-regular text--is-black"
+                    >Technology</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="travel_tourism"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="travel_tourism"
+                    class="text-three-regular text--is-black"
+                    >Travel & Tourism</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="health_fitness"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="health_fitness"
+                    class="text-three-regular text--is-black"
+                    >Health & Fitness</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="ecommerce"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="ecommerce"
+                    class="text-three-regular text--is-black"
+                    >E-Commerce</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="education"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="education"
+                    class="text-three-regular text--is-black"
+                    >Education</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="entertainment"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="entertainment"
+                    class="text-three-regular text--is-black"
+                    >Entertainment</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="others-one"
+                    name="queen_checkbox"
+                  />
+                  <label
+                    for="others-one"
+                    class="text-three-regular text--is-black"
+                    >Others</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="input-modified-checkbox"
+                    id="others-two"
+                    name="queen_checkbox"
+                    disabled
+                  />
+                  <label
+                    for="others-two"
+                    class="text-three-regular text--is-black"
+                    >Others</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__section filter__section--format">
+              <legend class="header-h-four">Format Type</legend>
+              <div class="filter__checkbox-bol">
+                <div>
+                  <input
+                    type="radio"
+                    name="design_tool"
+                    id="figma"
+                    class="custom-radio"
+                  />
+                  <label
+                    for="figma"
+                    class="aside-castom_cheackbox-bol text-three-regular text--is-black"
+                    >Figma</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="design_tool"
+                    id="sketch"
+                    class="custom-radio"
+                  />
+                  <label
+                    for="sketch"
+                    class="aside-castom_cheackbox-bol text-three-regular text--is-black"
+                    >Sketch</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="design_tool"
+                    id="adobe_xd"
+                    class="custom-radio"
+                  />
+                  <label
+                    for="adobe_xd"
+                    class="aside-castom_cheackbox-bol text-three-regular text--is-black"
+                    >Adobe XD</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="design_tool"
+                    id="adobe_photoshop"
+                    class="custom-radio"
+                  />
+                  <label
+                    for="adobe_photoshop"
+                    class="aside-castom_cheackbox-bol text-three-regular text--is-black"
+                    >Adobe Photoshop</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="design_tool"
+                    id="adobe_illustration"
+                    class="custom-radio"
+                  />
+                  <label
+                    for="adobe_illustration"
+                    class="aside-castom_cheackbox-bol text-three-regular text--is-black"
+                    >Adobe Illustration</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__checkbox-stile-box">
+              <legend class="header-h-four">Style</legend>
+              <div>
+                <input
+                  type="checkbox"
+                  id="minimalist"
+                  class="style-slider"
+                  required
+                />
+                <label
+                  for="minimalist"
+                  class="switch text-three-regular text--is-black"
+                >
+                  <span class="slider"></span> Minimalist
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="modern"
+                  class="style-slider"
+                  required
+                />
+                <label
+                  for="modern"
+                  class="switch text-three-regular text--is-black"
+                >
+                  <span class="slider"></span> Modern
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="playful"
+                  class="style-slider"
+                  required
+                />
+                <label
+                  for="playful"
+                  class="switch text-three-regular text--is-black"
+                >
+                  <span class="slider"></span> Playful
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="dark-mode"
+                  class="style-slider"
+                  required
+                />
+                <label
+                  for="dark-mode"
+                  class="switch text-three-regular text--is-black"
+                >
+                  <span class="slider"></span> Dark Mode
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="photocentric"
+                  class="style-slider"
+                  required
+                  disabled
+                />
+                <label
+                  for="photocentric"
+                  class="switch text-three-regular text--is-black"
+                >
+                  <span class="slider"></span> Photocentric
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__section filter__section--price">
+              <legend class="header-h-four">Price</legend>
+              <div class="price-range">
+                <div class="slider-container">
+                  <label for="range-min" class="label--hidden"></label>
+                  <input
+                    type="range"
+                    id="range-min"
+                    class="range input-range-min"
+                    min="0"
+                    max="1000"
+                    value="200"
+                  />
+                  <label for="range-max" class="label--hidden"></label>
+                  <input
+                    type="range"
+                    id="range-max"
+                    class="range"
+                    min="0"
+                    max="1000"
+                    value="800"
+                  />
+                  <div class="range-track"></div>
+                </div>
+                <div class="price-info">
+                  <span id="price-min">€0</span>
+                  <span id="price-max">€1000</span>
+                </div>
+              </div>
+            </fieldset>
+            <button
+              type="reset"
+              class="base-btn btn--is-gray btn--is-small-three link-text-two text--is-black"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6L6 18M6 6L18 18"
+                  stroke="#0D0D15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Clear all filters
+            </button>
+          </section>
+        </form>
+
+        <div class="card__container">
+          <div class="card-container__header">
+            <div class="card-container__header__nav">
+              <select
+                name="category"
+                id="category-select"
+                class="link-text-two"
+              >
+                <option value="technology">Best Seller</option>
+                <option value="travel">Travel & Tourism</option>
+                <option value="health">Health & Fitness</option>
+                <option value="ecommerce">E-Commerce</option>
+                <option value="education">Education</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="others">Others</option>
+              </select>
+              <div class="card-container__header__button-box">
+                <button
+                  type="button"
+                  class="base-btn btn--is-transparent btn--is-small text-two-regular"
+                >
+                  Showing 12 out of 120 results.
+                </button>
+
+                <button type="button" class="base-btn is-blue btn--is-small">
+                  <svg
+                    title="windows"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 3H4.6C4.03995 3 3.75992 3 3.54601 3.10899C3.35785 3.20487 3.20487 3.35785 3.10899 3.54601C3 3.75992 3 4.03995 3 4.6V8.4C3 8.96005 3 9.24008 3.10899 9.45399C3.20487 9.64215 3.35785 9.79513 3.54601 9.89101C3.75992 10 4.03995 10 4.6 10H8.4C8.96005 10 9.24008 10 9.45399 9.89101C9.64215 9.79513 9.79513 9.64215 9.89101 9.45399C10 9.24008 10 8.96005 10 8.4V4.6C10 4.03995 10 3.75992 9.89101 3.54601C9.79513 3.35785 9.64215 3.20487 9.45399 3.10899C9.24008 3 8.96005 3 8.4 3Z"
+                      stroke="#F8F7FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M19.4 3H15.6C15.0399 3 14.7599 3 14.546 3.10899C14.3578 3.20487 14.2049 3.35785 14.109 3.54601C14 3.75992 14 4.03995 14 4.6V8.4C14 8.96005 14 9.24008 14.109 9.45399C14.2049 9.64215 14.3578 9.79513 14.546 9.89101C14.7599 10 15.0399 10 15.6 10H19.4C19.9601 10 20.2401 10 20.454 9.89101C20.6422 9.79513 20.7951 9.64215 20.891 9.45399C21 9.24008 21 8.96005 21 8.4V4.6C21 4.03995 21 3.75992 20.891 3.54601C20.7951 3.35785 20.6422 3.20487 20.454 3.10899C20.2401 3 19.9601 3 19.4 3Z"
+                      stroke="#F8F7FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M19.4 14H15.6C15.0399 14 14.7599 14 14.546 14.109C14.3578 14.2049 14.2049 14.3578 14.109 14.546C14 14.7599 14 15.0399 14 15.6V19.4C14 19.9601 14 20.2401 14.109 20.454C14.2049 20.6422 14.3578 20.7951 14.546 20.891C14.7599 21 15.0399 21 15.6 21H19.4C19.9601 21 20.2401 21 20.454 20.891C20.6422 20.7951 20.7951 20.6422 20.891 20.454C21 20.2401 21 19.9601 21 19.4V15.6C21 15.0399 21 14.7599 20.891 14.546C20.7951 14.3578 20.6422 14.2049 20.454 14.109C20.2401 14 19.9601 14 19.4 14Z"
+                      stroke="#F8F7FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.4 14H4.6C4.03995 14 3.75992 14 3.54601 14.109C3.35785 14.2049 3.20487 14.3578 3.10899 14.546C3 14.7599 3 15.0399 3 15.6V19.4C3 19.9601 3 20.2401 3.10899 20.454C3.20487 20.6422 3.35785 20.7951 3.54601 20.891C3.75992 21 4.03995 21 4.6 21H8.4C8.96005 21 9.24008 21 9.45399 20.891C9.64215 20.7951 9.79513 20.6422 9.89101 20.454C10 20.2401 10 19.9601 10 19.4V15.6C10 15.0399 10 14.7599 9.89101 14.546C9.79513 14.3578 9.64215 14.2049 9.45399 14.109C9.24008 14 8.96005 14 8.4 14Z"
+                      stroke="#F8F7FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="base-btn btn--is-gray btn--is-small"
+                >
+                  <svg
+                    title="points"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 12L9 12M21 6L9 6M21 18L9 18M5 12C5 12.5523 4.55228 13 4 13C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11C4.55228 11 5 11.4477 5 12ZM5 6C5 6.55228 4.55228 7 4 7C3.44772 7 3 6.55228 3 6C3 5.44772 3.44772 5 4 5C4.55228 5 5 5.44772 5 6ZM5 18C5 18.5523 4.55228 19 4 19C3.44772 19 3 18.5523 3 18C3 17.4477 3.44772 17 4 17C4.55228 17 5 17.4477 5 18Z"
+                      stroke="#0D0D15"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div>
+              <ul class="button-box__list">
+                <li class="button-box__item">
+                  <button
+                    type="button"
+                    class="base-btn btn--is-gray btn--is-small-four link-text-three text--is-black"
+                  >
+                    UI Kit
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18 6L6 18M6 6L18 18"
+                        stroke="#0D0D15"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li class="filter_box_item">
+                  <button
+                    type="button"
+                    class="base-btn btn--is-gray btn--is-small-four link-text-three text--is-black"
+                  >
+                    UI Kit<svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18 6L6 18M6 6L18 18"
+                        stroke="#0D0D15"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- -------------------------------------------Card-Box -->
+          <div class="card-box">
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-one.webp"
+                alt="image description"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Lens Chronicles</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">
+                    Photography
+                  </p>
+                  <p class="text-two-regular text--is-grey is--box">Creative</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€21.00</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="span-sold-out catalog__card-tag bg-color--is-white text-three-regular text--is-gray"
+                >SOLD OUT</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-two.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Career Success</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">Guidance</p>
+                  <p class="text-two-regular text--is-grey is--box">Jobs</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€20.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-green text-three-regular text--is-white"
+                >NEW</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-three.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Dream Homes</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">
+                    Real Estate
+                  </p>
+                  <p class="text-two-regular text--is-grey is--box">Modern</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€45.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-blue text-three-regular text--is-white"
+                >POPULAR</span
+              >
+            </article>
+
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-four.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Foodish Catering</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">Food</p>
+                  <p class="text-two-regular text--is-grey is--box">Events</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€15.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-blue text-three-regular text--is-white"
+                >POPULAR</span
+              >
+            </article>
+
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-five.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Caring Hearts</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">
+                    Healthcare
+                  </p>
+                  <p class="text-two-regular text--is-grey is--box">Support</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€19.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-green text-three-regular text--is-white"
+                >NEW</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-sex.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Gaming Rise</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">eSports</p>
+                  <p class="text-two-regular text--is-grey is--box">Trends</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€00.00</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="span-sold-out catalog__card-tag bg-color--is-white text-three-regular text--is-gray"
+                >SOLD OUT</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-seven.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Edit Pro</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">Design</p>
+                  <p class="text-two-regular text--is-grey is--box">Tools</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€00.00</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="span-sold-out catalog__card-tag bg-color--is-white text-three-regular text--is-gray"
+                >SOLD OUT</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-eight.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Banking Redefined</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">Finance</p>
+                  <p class="text-two-regular text--is-grey is--box">Secure</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€25.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-green text-three-regular text--is-white"
+                >NEW</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-nine.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Exploring Fun</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">Travel</p>
+                  <p class="text-two-regular text--is-grey is--box">
+                    Adventure
+                  </p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€41.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-blue text-three-regular text--is-white"
+                >POPULAR</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-ten.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Admin Dashboard</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">Data</p>
+                  <p class="text-two-regular text--is-grey is--box">Tools</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€15.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-blue text-three-regular text--is-white"
+                >POPULAR</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-eleven.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">
+                  Analytical Dashboard
+                </h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">Data</p>
+                  <p class="text-two-regular text--is-grey is--box">Tools</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€10.99</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg
+                        title="heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="catalog__card-tag bg-color--is-green text-three-regular text--is-white"
+                >NEW</span
+              >
+            </article>
+            <article class="catalog__card">
+              <img
+                src="./img/catalog__img/card-twelve.webp"
+                alt="Product Picture"
+                class="trending-card__img"
+                width="325"
+                height="260"
+              />
+              <div class="trending-card__footer-box">
+                <h5 class="header-h-four text--is-black">Kindergarten</h5>
+
+                <div class="card__footer">
+                  <p class="text-two-regular text--is-grey is--box">
+                    Education
+                  </p>
+                  <p class="text-two-regular text--is-grey is--box">Kids</p>
+                </div>
+                <div class="catalog-card__footer">
+                  <span
+                    class="span-catalog__card__price header-h-four text--is-black"
+                    >€50.00</span
+                  >
+                  <div>
+                    <button class="base-btn btn--is-gray btn--is-small">
+                      <svg>
+                        title="heart" width="24" height="24" viewBox="0 0 21 19"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path
+                          d="M18.5013 10.5719L11.0013 17.9999L3.50128 10.5719C3.00658 10.0905 2.61692 9.51195 2.35683 8.87257C2.09673 8.23319 1.97184 7.54688 1.99002 6.85687C2.00819 6.16685 2.16904 5.48807 2.46244 4.86327C2.75583 4.23847 3.17541 3.68119 3.69476 3.22651C4.21411 2.77184 4.82198 2.42962 5.48009 2.22141C6.1382 2.01321 6.83228 1.94352 7.51865 2.01673C8.20501 2.08995 8.86878 2.30449 9.46815 2.64684C10.0675 2.98919 10.5895 3.45193 11.0013 4.00593C11.4148 3.45595 11.9374 2.99725 12.5364 2.65854C13.1353 2.31982 13.7978 2.10838 14.4822 2.03745C15.1666 1.96652 15.8584 2.03763 16.5141 2.24632C17.1697 2.45502 17.7753 2.79681 18.2928 3.2503C18.8104 3.70379 19.2287 4.25922 19.5217 4.88182C19.8147 5.50443 19.976 6.18082 19.9956 6.86864C20.0152 7.55647 19.8925 8.24093 19.6354 8.87918C19.3783 9.51744 18.9922 10.0958 18.5013 10.5779"
+                          stroke="#273544"
+                          stroke-opacity="0.55"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+
+                    <button
+                      href="#"
+                      class="base-btn is-blue btn--is-small add-to-cart"
+                    >
+                      <svg
+                        title="bag"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                          stroke="#F8F7FF"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="span-sold-out catalog__card-tag bg-color--is-white text-three-regular text--is-gray"
+                >SOLD OUT</span
+              >
+            </article>
+          </div>
+          <button
+            type="button"
+            class="base-btn btn--is-gray btn--is-medium link-text-one text--is-black"
+          >
+            Load more
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__info">
+        <a href="./index.html" target="_parent" class="footer__header">
+          <img src="./img/logo/logo-footer.svg" alt="Logo PixMart" />
+          <p class="text-two-regular">
+            Your premium digital assets solution with high quality and
+            comprehensive range of products and services.
+          </p>
+        </a>
+        <div class="footer__navigation">
+          <div class="footer__navigation-box">
+            <h2 class="header-h-four">Company</h2>
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Homepage v1
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Homepage v2</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Homepage v3</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >About Us</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >About Us</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Blog Articles</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation-box">
+            <h2 class="header-h-four">Products</h2>
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Website</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Mobile App</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Social Media Feeds</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Presentation</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Product Mockups</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Illustrations</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation-box">
+            <h2 class="header-h-four">Account</h2>
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Your Cart</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Check Out</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Refund Policy</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Company Policy</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Send A Message</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Customer Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__social-subscribe">
+        <div class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                href="https://x.com"
+                class="footer__social-link social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  title="twitter"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.6441 6.18005C20.5012 5.64387 21.1425 4.7996 21.4483 3.80486C20.6429 4.30492 19.7618 4.65717 18.8429 4.84639C17.569 3.43621 15.5505 3.09303 13.9155 4.00862C12.2804 4.92421 11.4335 6.87189 11.848 8.76335C8.54901 8.59003 5.47544 6.95936 3.3921 4.2771C2.30485 6.2395 2.86046 8.74812 4.66182 10.01C4.01043 9.98806 3.37348 9.80351 2.80409 9.4717C2.80409 9.48971 2.80409 9.50772 2.80409 9.52573C2.80447 11.5699 4.18125 13.3307 6.09599 13.7358C5.49179 13.9079 4.85802 13.9332 4.24304 13.8099C4.78153 15.558 6.32121 16.7556 8.07611 16.7914C6.62265 17.9851 4.82769 18.6325 2.98002 18.6293C2.65252 18.6298 2.32528 18.6101 2 18.5703C3.87627 19.8319 6.06002 20.5016 8.29028 20.4992C11.3931 20.5215 14.375 19.2415 16.569 16.9455C18.763 14.6494 19.986 11.529 19.9644 8.28211C19.9644 8.09601 19.9603 7.91092 19.952 7.72683C20.7556 7.11913 21.4491 6.3663 22 5.50372C21.2514 5.85095 20.4573 6.07893 19.6441 6.18005Z"
+                    fill="#0D0D15"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://www.facebook.com"
+                class="footer__social-link social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  title="facebook"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10.0614C0.00116354 15.0111 3.5784 19.2255 8.437 20.0012V12.9692H5.9V10.0614H8.44V7.84786C8.32645 6.79898 8.68252 5.75363 9.41164 4.99534C10.1408 4.23703 11.1674 3.84437 12.213 3.92385C12.9635 3.93604 13.7122 4.0033 14.453 4.12508V6.59922H13.189C12.7538 6.54187 12.3164 6.68647 11.9998 6.99229C11.6832 7.2981 11.5218 7.73203 11.561 8.17184V10.0614H14.332L13.889 12.9702H11.561V20.0012C16.8155 19.1657 20.5001 14.3373 19.9455 9.01407C19.3909 3.69079 14.7913 -0.263846 9.47882 0.0151105C4.16636 0.294067 0.000844477 4.70896 0 10.0614Z"
+                    fill="#0D0D15"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://telegram.org"
+                class="footer__social-link social-link"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  title="telegramm"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.5468 0.422732C23.1374 0.114515 22.4944 0.0704154 21.8295 0.307393H21.8285C21.1292 0.556486 2.03537 7.82768 1.25808 8.12475C1.11671 8.16836 -0.118008 8.57738 0.00917513 9.48846C0.122712 10.3099 1.11507 10.6501 1.23625 10.6893L6.0905 12.165C6.41255 13.1168 7.59977 16.6283 7.86233 17.3785C8.02608 17.8462 8.293 18.4607 8.7608 18.5871C9.17128 18.7277 9.57957 18.5993 9.84376 18.4151L12.8116 15.9712L17.6025 19.2884L17.7166 19.349C18.0419 19.4769 18.3536 19.5409 18.6511 19.5409C18.8809 19.5409 19.1014 19.5026 19.3121 19.426C20.0299 19.1643 20.317 18.5571 20.347 18.4883L23.9256 1.97399C24.144 1.09199 23.8405 0.643232 23.5468 0.422732ZM10.3716 12.7553L8.73405 16.6322L7.0965 11.786L19.6511 3.54754L10.3716 12.7553Z"
+                    fill="#0D0D15"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__subscribe">
+          <form class="footer__subscribe-form">
+            <label for="email" class="footer__subscribe-label header-h-four"
+              >Subscribe to Design Newsletter</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address ..."
+              class="base-input footer__input text-two-regular"
+              required
+            />
+            <button
+              type="submit"
+              class="btn--is-big base-btn is-blue link-text-two"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__terms">
+        <div>
+          <ul class="nav__list">
+            <li class="footer__terms-item nav__list__item">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="#"
+                class="footer__terms-link text-two-regular link--is-grey"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer__terms-item nav__list__item">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="#"
+                class="footer__terms-link text-two-regular link--is-grey"
+                >Terms and Condition</a
+              >
+            </li>
+            <li class="footer__terms-item nav__list__item">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="#"
+                class="footer__terms-link text-two-regular link--is-grey"
+                >Site Map</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="text-three-regular">
+          Copyright © 2024 Pixmart. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cartCount = document.getElementById("cart-count");
+        const cartContainer = document.getElementById("cart-container");
+
+        function getCart() {
+          return JSON.parse(localStorage.getItem("cart")) || [];
+        }
+
+        function saveCart(cart) {
+          localStorage.setItem("cart", JSON.stringify(cart));
+          updateCartCount();
+          renderCart();
+        }
+
+        function updateCartCount() {
+          const cart = getCart();
+          cartCount.textContent = cart.length;
+        }
+
+        function addToCart(event) {
+          event.preventDefault();
+          const button = event.target.closest(".add-to-cart");
+          if (!button) return;
+
+          const card = button.closest(".catalog__card");
+          const product = {
+            image: card.querySelector("img").src,
+            title: card.querySelector("h5").textContent,
+            price: card.querySelector(".span-catalog__card__price").textContent,
+          };
+
+          let cart = getCart();
+          cart.push(product);
+          saveCart(cart);
+        }
+
+        function removeFromCart(event) {
+          const button = event.target.closest(".remove-from-cart");
+          if (!button) return;
+
+          const index = button.getAttribute("data-index");
+          let cart = getCart();
+          cart.splice(index, 1);
+          saveCart(cart);
+        }
+
+        function renderCart() {
+          const cart = getCart();
+          cartContainer.innerHTML = "";
+
+          cart.forEach((product, index) => {
+            const card = document.createElement("div");
+            card.classList.add("catalog__card");
+
+            card.innerHTML = `
+                <img src="${product.image}" alt="${product.title}">
+                <h5>${product.title}</h5>
+                <span class="span-catalog__card__price">${product.price}</span>
+                <button class="remove-from-cart" data-index="${index}">Clear All</button>
+            `;
+
+            card
+              .querySelector(".remove-from-cart")
+              .addEventListener("click", removeFromCart);
+            cartContainer.appendChild(card);
+          });
+        }
+
+        document.querySelectorAll(".add-to-cart").forEach((button) => {
+          button.addEventListener("click", addToCart);
+        });
+
+        updateCartCount();
+        renderCart();
+      });
+    </script>
+
+    <script>
+      const rangeMin = document.getElementById("range-min");
+      const rangeMax = document.getElementById("range-max");
+      const priceMin = document.getElementById("price-min");
+      const priceMax = document.getElementById("price-max");
+      const rangeTrack = document.querySelector(".range-track");
+
+      rangeMin.addEventListener("input", updatePriceRange);
+      rangeMax.addEventListener("input", updatePriceRange);
+
+      function updatePriceRange() {
+        const minValue = parseInt(rangeMin.value);
+        const maxValue = parseInt(rangeMax.value);
+
+        if (minValue >= maxValue) {
+          rangeMin.value = maxValue - 1;
+        }
+
+        priceMin.textContent = `€${minValue}`;
+        priceMax.textContent = `€${maxValue}`;
+
+        const minPercent = (minValue / 1000) * 100;
+        const maxPercent = (maxValue / 1000) * 100;
+
+        rangeTrack.style.left = `${minPercent}%`;
+        rangeTrack.style.width = `${maxPercent - minPercent}%`;
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".catalog__card");
+
+        cards.forEach((card) => {
+          const soldOutSpan = card.querySelector(".span-sold-out");
+          const priceSpan = card.querySelector(".span-catalog__card__price");
+          const buttonsContainer = card.querySelector(
+            ".catalog-card__footer > div"
+          );
+
+          if (soldOutSpan && soldOutSpan.textContent.trim() === "SOLD OUT") {
+            // Отключаем клики по всей карточке
+            card.style.pointerEvents = "none";
+            card.style.opacity = "0.5";
+
+            // Изменяем цену
+            if (priceSpan) {
+              priceSpan.textContent = "€00.00";
+            }
+
+            // Скрываем кнопки
+            if (buttonsContainer) {
+              buttonsContainer.style.display = "none";
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

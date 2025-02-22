@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to the blog page! Read our articles, tips and news to stay up to date with the latest developments."
+    />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <title>Blog page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <div class="header__logo__nav__box">
+          <a href="./index.html" style="margin-right: 32px">
+            <img src="./img/logo/logos.svg" alt="Logo Pixmart" />
+          </a>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__list__item">
+                <a
+                  href="./index.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >About</a
+                >
+              </li>
+
+              <li class="nav__list__item">
+                <a
+                  href="./catalog.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >Products</a
+                >
+              </li>
+
+              <li class="nav__list__item">
+                <a
+                  href="./blog.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav__list__item">
+                <a
+                  href="./contact.html"
+                  class="list__item__link link-text-three link--is-black"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <form class="header__actions">
+          <label for="search-input" class="label--hidden"></label>
+          <input
+            id="search-input"
+            class="base-input text-three-regular header__input"
+            type="search"
+            placeholder="Search for Digital Assets"
+            name="search"
+          />
+          <a href="./catalod.html" class="base-btn is-blue btn--is-small">
+            <svg
+              title="bag"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                stroke="#F8F7FF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div class="blog__header-box padding-horizontal">
+        <a
+          href="#"
+          class="base-btn is-blue btn--is-small btn--is-oval text-three-regular text--is-gray"
+          >TYPOGRAPHY</a
+        >
+        <h1 class="header-h-one">
+          Mastering the Art of Typography:
+          <span>Tips for Eye-Catching Designs for 2024</span>
+        </h1>
+
+        <figure class="blog__main-img-box">
+          <img
+            src="./img/blog-page__img/blog-page__main-img.webp"
+            alt="Business trainer shows his students graphs on a monitor"
+            class="main-img"
+            width="1280"
+            height="414"
+          />
+          <figcaption>
+            Business trainer shows his students graphs on a monitor
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="blog__content-container padding-horizontal">
+        <aside class="blog__aside">
+          <div class="blog__aside__author-box">
+            <div>
+              <img
+                src="./img/blog-page__img/photo.svg"
+                alt=" Photo by Emma Clarke"
+                width="60"
+                height="60"
+              />
+            </div>
+            <div class="blog-author__info-box">
+              <h5 class="header-h-four"><strong>Emma Clarke</strong></h5>
+              <time class="text-two-regular text--is-grey" datetime="2024-04-10"
+                >April 10, 2024</time
+              >
+            </div>
+          </div>
+          <div class="blog__aside__link-box">
+            <h4 class="header-h-four text--is-black">Categories</h4>
+            <ul class="blog__aside__link-list">
+              <li class="link-list__item">
+                <a href="#" class="text-two-regular text--is-grey"
+                  >Graphic Design Trends</a
+                >
+              </li>
+              <li class="link-list__item">
+                <a href="#" class="text-two-regular text--is-grey"
+                  >Typography & Fonts</a
+                >
+              </li>
+              <li class="link-list__item">
+                <a href="#" class="text-two-regular text--is-grey"
+                  >UI/UX Design</a
+                >
+              </li>
+              <li class="link-list__item">
+                <a href="#" class="text-two-regular text--is-grey"
+                  >Branding & Identity</a
+                >
+              </li>
+              <li class="link-list__item">
+                <a href="#" class="text-two-regular text--is-grey"
+                  >Illustration</a
+                >
+              </li>
+              <li class="link-list__item">
+                <a href="#" class="text-two-regular text--is-grey"
+                  >Digital Marketing
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog__aside__bar-box">
+            <h4 class="header-h-four text--is-black">Latest Articles</h4>
+            <div>
+              <h5 class="header-h-four text--is-black">Text</h5>
+              <time datetime="2024-03-15" class="text-two-regular text--is-gray"
+                >March 15, 2024</time
+              >
+            </div>
+            <div>
+              <h5 class="header-h-four text--is-black">Text</h5>
+              <time datetime="2024-03-15" class="text-two-regular text--is-gray"
+                >March 15, 2024</time
+              >
+            </div>
+          </div>
+        </aside>
+        <div class="blog__content-box">
+          <p class="text-one-regular text--is-gray">
+            In the vast expanse of graphic design, typography stands as a
+            pivotal element that can make or break the visual appeal of any
+            project. Understanding the art of typography is essential for
+            creating designs that not only attract attention but also
+            communicate effectively. Here, we delve into practical tips that
+            will help you master typography, transforming your creations into
+            eye-catching masterpieces.
+          </p>
+          <h4 class="header-h-four text--is-black">
+            1. Understand Typeface Selection
+          </h4>
+          <p class="text-one-regular text--is-gray">
+            The choice of typeface is foundational in setting the tone of your
+            design. Serif fonts, with their classic appeal, lend a touch of
+            elegance and formality, making them ideal for print media and
+            official documents. Sans-serif fonts, on the other hand, project a
+            modern and clean look, perfect for digital platforms. When selecting
+            a typeface, consider the message you wish to convey and the medium
+            through which it will be communicated.
+          </p>
+          <h4 class="header-h-four">2. Create a Typographic Hierarchy</h4>
+          <p class="text-one-regular text--is-gray">
+            A well-defined typographic hierarchy organizes information, making
+            it easier for readers to navigate through the content. Use different
+            font sizes, weights, and styles to differentiate between headings,
+            subheadings, and body text. This hierarchy not only improves
+            readability but also adds visual interest to your next future
+            design.
+          </p>
+          <div class="example-box">
+            <figure class="blog__img-two-box">
+              <img
+                class="blog__img-two"
+                src="./img/blog-page__img/photo.webp"
+                alt="foto of an example"
+                width="980"
+                height="462"
+              />
+
+              <figcaption class="--is-visible text-two-regular text--is-grey">
+                Example of font usage in typography.
+                <a href="#" class="link--is-blue link-text-two text--is-blue"
+                  >Get this asset</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <h4 class="header-h-four">3. Experiment with Alignment</h4>
+          <p class="text-one-regular text--is-gray">
+            While center and right alignments have their place, left-aligned
+            text is generally the most legible and comfortable for readers,
+            especially for longer passages. However, don’t shy away from
+            experimenting with different alignments in headings or callouts to
+            add dynamism to your layout.
+          </p>
+          <h4 class="header-h-four">4. Embrace White Space</h4>
+          <p class="text-one-regular text--is-gray">
+            White space, or negative space, is a powerful tool in typography. It
+            helps in decluttering designs and allows each typographic element to
+            breathe. Proper use of white space can significantly improve the
+            overall balance and composition of your design.
+          </p>
+          <blockquote class="blog__blockqote" cite="#">
+            <svg
+              title="quotes"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5323 16.8C9.86562 19.7334 8.26562 22.9334 8.26562 28.2667C8.26562 37.6 14.9323 45.8667 24.2656 50.1334L26.6656 46.6667C17.8656 41.8667 15.999 35.7334 15.4656 31.7334C16.799 32.5334 18.6656 32.8 20.5323 32.5334C25.3323 32 29.0656 28.2667 29.0656 23.2C29.0656 20.8 27.999 18.4 26.399 16.5334C24.5323 14.6667 22.399 13.8667 19.7323 13.8667C16.799 13.8667 14.1323 15.2 12.5323 16.8ZM39.199 16.8C36.5323 19.7334 34.9323 22.9334 34.9323 28.2667C34.9323 37.6 41.599 45.8667 50.9323 50.1334L53.3323 46.6667C44.5323 41.8667 42.6656 35.7334 42.1323 31.7334C43.4656 32.5334 45.3323 32.8 47.199 32.5334C51.999 32 55.7323 28.2667 55.7323 23.2C55.7323 20.8 54.6656 18.4 53.0656 16.5334C51.4656 14.6667 49.0656 13.8667 46.399 13.8667C43.4656 13.8667 40.799 15.2 39.199 16.8Z"
+                fill="#0F73F6"
+              />
+            </svg>
+
+            <h4 class="header-h-four">
+              Typography is not just the art of arranging type but the craft of
+              breathing life into characters, turning words into stories that
+              captivate the soul.
+            </h4>
+          </blockquote>
+          <div class="text-block">
+            <p class="text-one-regular text--is-gray text--is-hidden" id="text">
+              Typography is an art that speaks volumes beyond the mere letters
+              on a surface. By applying these tips, designers can elevate their
+              work from mere messages to powerful visual statements. Remember,
+              mastering typography is a journey of continuous learning and
+              experimentation. Embrace the process, and let your designs speak
+              louder than words. Happy designing!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blog__card-container">
+        <div class="card-container__header">
+          <h2 class="header-h-two text--is-black">Related Articles</h2>
+          <a
+            href="./catalod.html"
+            class="--is-block link--is-blue link-text-two text--is-blue"
+            >Explore All Articles
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12L10 8L6 4"
+                stroke="#0265DC"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="card-container__wraper">
+          <article class="card--in-blog">
+            <a href="#" class="blog__card__link">
+              <div class="blog-card__img-box">
+                <img
+                  src="./img/blog__img/blog__img-one.webp"
+                  alt="Photo of the finished dish with meat and lemon"
+                  width="624"
+                  height="289"
+                />
+              </div>
+              <div class="blog__card__footer">
+                <h3
+                  class="header-h-three text--is-black"
+                  style="margin-bottom: 8px"
+                >
+                  Best Dishes
+                </h3>
+                <time
+                  class="text-two-regular text--is-grey"
+                  datetime="2024-04-15"
+                  >15 APRIL 2024</time
+                >
+              </div>
+            </a>
+            <span
+              class="card-tag tag--on-bottom text-three-regular text--is-white"
+              >TAG</span
+            >
+          </article>
+          <article class="card--in-blog">
+            <a href="#" class="blog__card__link">
+              <div class="blog-card__img-box">
+                <img
+                  src="./img/blog__img/blog__img-two.webp"
+                  alt="Screenshot from spa website"
+                  width="624"
+                  height="289"
+                />
+              </div>
+              <div class="blog__card__footer">
+                <h3
+                  class="header-h-three text--is-black"
+                  style="margin-bottom: 8px"
+                >
+                  Contact Us
+                </h3>
+                <time
+                  class="text-two-regular text--is-grey"
+                  datetime="2024-05-05"
+                  >5 MAY 2024</time
+                >
+              </div>
+            </a>
+            <span
+              class="card-tag tag--on-bottom text-three-regular text--is-white"
+              >TAG</span
+            >
+          </article>
+          <article class="card--in-blog">
+            <a href="#" class="blog__card__link">
+              <div class="blog-card__img-box">
+                <img
+                  src="./img/blog-page__img/three.webp"
+                  alt="Screenshot of a website about positive thinking"
+                  width="624"
+                  height="289"
+                />
+              </div>
+              <div class="blog__card__footer">
+                <h3
+                  class="header-h-three text--is-black"
+                  style="margin-bottom: 8px"
+                >
+                  Creative Blog
+                </h3>
+                <time
+                  class="text-two-regular text--is-grey"
+                  datetime="2024-06-20"
+                  >20 JUNE 2024</time
+                >
+              </div>
+            </a>
+            <span
+              class="card-tag tag--on-bottom text-three-regular text--is-white"
+              >TAG</span
+            >
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <a href="./index.html" target="_parent" class="footer__header">
+          <img src="./img/logo/logo-footer.svg" alt="Logo PixMart" />
+          <p class="text-two-regular">
+            Your premium digital assets solution with high quality and
+            comprehensive range of products and services.
+          </p>
+        </a>
+        <div class="footer__navigation">
+          <div class="footer__navigation-box">
+            <h2 class="header-h-four">Company</h2>
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Homepage v1
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Homepage v2</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Homepage v3</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >About Us</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >About Us</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Blog Articles</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation-box">
+            <h2 class="header-h-four">Products</h2>
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Website</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Mobile App</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Social Media Feeds</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Presentation</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Product Mockups</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Illustrations</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation-box">
+            <h2 class="header-h-four">Account</h2>
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Your Cart</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Check Out</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Refund Policy</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Company Policy</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Send A Message</a
+                >
+              </li>
+              <li class="footer__navigation-item">
+                <a
+                  href="#"
+                  class="footer__navigation-link text-two-regular link--is-grey"
+                  >Customer Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__social-subscribe">
+        <div class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                href="https://x.com"
+                class="footer__social-link social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  title="twitter"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.6441 6.18005C20.5012 5.64387 21.1425 4.7996 21.4483 3.80486C20.6429 4.30492 19.7618 4.65717 18.8429 4.84639C17.569 3.43621 15.5505 3.09303 13.9155 4.00862C12.2804 4.92421 11.4335 6.87189 11.848 8.76335C8.54901 8.59003 5.47544 6.95936 3.3921 4.2771C2.30485 6.2395 2.86046 8.74812 4.66182 10.01C4.01043 9.98806 3.37348 9.80351 2.80409 9.4717C2.80409 9.48971 2.80409 9.50772 2.80409 9.52573C2.80447 11.5699 4.18125 13.3307 6.09599 13.7358C5.49179 13.9079 4.85802 13.9332 4.24304 13.8099C4.78153 15.558 6.32121 16.7556 8.07611 16.7914C6.62265 17.9851 4.82769 18.6325 2.98002 18.6293C2.65252 18.6298 2.32528 18.6101 2 18.5703C3.87627 19.8319 6.06002 20.5016 8.29028 20.4992C11.3931 20.5215 14.375 19.2415 16.569 16.9455C18.763 14.6494 19.986 11.529 19.9644 8.28211C19.9644 8.09601 19.9603 7.91092 19.952 7.72683C20.7556 7.11913 21.4491 6.3663 22 5.50372C21.2514 5.85095 20.4573 6.07893 19.6441 6.18005Z"
+                    fill="#0D0D15"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://www.facebook.com"
+                class="footer__social-link social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  title="facebook"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10.0614C0.00116354 15.0111 3.5784 19.2255 8.437 20.0012V12.9692H5.9V10.0614H8.44V7.84786C8.32645 6.79898 8.68252 5.75363 9.41164 4.99534C10.1408 4.23703 11.1674 3.84437 12.213 3.92385C12.9635 3.93604 13.7122 4.0033 14.453 4.12508V6.59922H13.189C12.7538 6.54187 12.3164 6.68647 11.9998 6.99229C11.6832 7.2981 11.5218 7.73203 11.561 8.17184V10.0614H14.332L13.889 12.9702H11.561V20.0012C16.8155 19.1657 20.5001 14.3373 19.9455 9.01407C19.3909 3.69079 14.7913 -0.263846 9.47882 0.0151105C4.16636 0.294067 0.000844477 4.70896 0 10.0614Z"
+                    fill="#0D0D15"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://telegram.org"
+                class="footer__social-link social-link"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  title="telegramm"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.5468 0.422732C23.1374 0.114515 22.4944 0.0704154 21.8295 0.307393H21.8285C21.1292 0.556486 2.03537 7.82768 1.25808 8.12475C1.11671 8.16836 -0.118008 8.57738 0.00917513 9.48846C0.122712 10.3099 1.11507 10.6501 1.23625 10.6893L6.0905 12.165C6.41255 13.1168 7.59977 16.6283 7.86233 17.3785C8.02608 17.8462 8.293 18.4607 8.7608 18.5871C9.17128 18.7277 9.57957 18.5993 9.84376 18.4151L12.8116 15.9712L17.6025 19.2884L17.7166 19.349C18.0419 19.4769 18.3536 19.5409 18.6511 19.5409C18.8809 19.5409 19.1014 19.5026 19.3121 19.426C20.0299 19.1643 20.317 18.5571 20.347 18.4883L23.9256 1.97399C24.144 1.09199 23.8405 0.643232 23.5468 0.422732ZM10.3716 12.7553L8.73405 16.6322L7.0965 11.786L19.6511 3.54754L10.3716 12.7553Z"
+                    fill="#0D0D15"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__subscribe">
+          <form class="footer__subscribe-form">
+            <label for="email" class="footer__subscribe-label header-h-four"
+              >Subscribe to Design Newsletter</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address ..."
+              class="base-input footer__input text-two-regular"
+              required
+            />
+            <button
+              type="submit"
+              class="btn--is-big base-btn is-blue link-text-two"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__terms">
+        <div>
+          <ul class="nav__list">
+            <li class="footer__terms-item nav__list__item">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="#"
+                class="footer__terms-link text-two-regular link--is-grey"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer__terms-item nav__list__item">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="#"
+                class="footer__terms-link text-two-regular link--is-grey"
+                >Terms and Condition</a
+              >
+            </li>
+            <li class="footer__terms-item nav__list__item">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="#"
+                class="footer__terms-link text-two-regular link--is-grey"
+                >Site Map</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="text-three-regular">
+          Copyright © 2024 Pixmart. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const text = document.getElementById("text");
+
+        text.addEventListener("click", function () {
+          text.classList.toggle("expanded");
+        });
+      });
+    </script>
+  </body>
+</html>
